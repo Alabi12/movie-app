@@ -6,7 +6,6 @@ import {
   fetchAsyncMovies,
   fetchAsyncShows,
 } from "../../features/movies/movieSlice";
-import user from "../../images/user.png";
 import "./Header.scss";
 
 const Header = () => {
