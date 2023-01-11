@@ -3,7 +3,7 @@
 .movie-section {
   display: flex;
   justify-content: space-evenly;
-  padding: 40px 0px;
+  padding: 40px 0;
   color: $font-primary;
   font-weight: 400;
 }
@@ -13,6 +13,7 @@
   margin-top: 20px;
   color: $font-secondary;
   display: flex;
+
   span {
     margin-right: 20px;
   }
@@ -22,13 +23,14 @@
   font-size: 40px;
   color: $font-primary;
 }
+
 .movie-plot {
   margin-top: 20px;
   line-height: 1.8rem;
 }
 
 .movie-info > div span:first-child {
-  padding: 10px 0px;
+  padding: 10px 0;
   color: $font-primary;
   font-weight: 600;
   width: 100px;
@@ -42,6 +44,7 @@
 .fa-star {
   color: #ff9e00;
 }
+
 .fa-thumbs-up {
   color: #fafafa;
 }
