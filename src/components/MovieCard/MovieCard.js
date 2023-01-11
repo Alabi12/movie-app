@@ -1,6 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./MovieCard.scss";
+/* eslint-disable react/prop-types */
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './MovieCard.scss';
 
 const MovieCard = (props) => {
   const { data } = props;

@@ -1,24 +1,24 @@
-import React, { useEffect } from "react";
-import "./MovieDetail.scss";
-import { useParams } from "react-router";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from 'react';
+import './MovieDetail.scss';
+import { useParams } from 'react-router';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   fetchAsyncMovieOrShowDetail,
   getSelectedMovieOrShow,
   removeSelectedMovieOrShow,
-} from "../../features/movies/movieSlice";
+} from '../../features/movies/movieSlice';
 
 const MovieDetail = () => {
   const { imdbID } = useParams();
   const dispatch = useDispatch();
   const data = useSelector(getSelectedMovieOrShow);
-  console.log(data);
   useEffect(() => {
     dispatch(fetchAsyncMovieOrShowDetail(imdbID));
     return () => {
       dispatch(removeSelectedMovieOrShow());
     };
   }, [dispatch, imdbID]);
+  console.log(data);
   return (
     <div className="movie-section">
       {Object.keys(data).length === 0 ? (
@@ -29,17 +29,40 @@ const MovieDetail = () => {
             <div className="movie-title">{data.Title}</div>
             <div className="movie-rating">
               <span>
-                IMDB Rating <i className="fa fa-star"></i> : {data.imdbRating}
+                IMDB Rating
+                {' '}
+                <i className="fa fa-star" />
+                {' '}
+                :
+                {' '}
+                {data.imdbRating}
               </span>
               <span>
-                IMDB Votes <i className="fa fa-thumbs-up"></i> :{" "}
+                IMDB Votes
+                {' '}
+                <i className="fa fa-thumbs-up" />
+                {' '}
+                :
+                {' '}
                 {data.imdbVotes}
               </span>
               <span>
-                Runtime <i className="fa fa-film"></i> : {data.Runtime}
+                Runtime
+                {' '}
+                <i className="fa fa-film" />
+                {' '}
+                :
+                {' '}
+                {data.Runtime}
               </span>
               <span>
-                Year <i className="fa fa-calendar"></i> : {data.Year}
+                Year
+                {' '}
+                <i className="fa fa-calendar" />
+                {' '}
+                :
+                {' '}
+                {data.Year}
               </span>
             </div>
             <div className="movie-plot">{data.Plot}</div>
