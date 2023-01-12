@@ -104,7 +104,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/SergSkol/space-travel.git
+  git clone https://github.com/Alabi12/redux-movie-app.git
 ```
 
 ### Install <a name="install"></a>
