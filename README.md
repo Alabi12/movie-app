@@ -27,7 +27,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space Traveler's Hub <a name="about-project"></a>
+# 📖 Movie App <a name="about-project"></a>
 
 **Movie App**  is about building a mobile web application to check a list of metrics (numeric values) that you will create making use of React and Redux. The application will allow users to search for appropriate choice movie. Application is working with the real live data from API.
 
@@ -77,8 +77,8 @@
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo on Pages](https://sergskol.github.io/space-travel/public/) -->
+ ## 🚀 Live Demo <a name="live-demo"></a>
+- [Live Demo on Pages](https://alabi12.github.io/redux-movie-app/)
 
 <!-- GETTING STARTED -->
 
