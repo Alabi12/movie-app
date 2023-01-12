@@ -1,7 +1,7 @@
-/* eslint-disable react/prop-types */
-import React from "react";
-import { Link } from "react-router-dom";
-import "./MovieCard.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import './MovieCard.scss';
 
 const MovieCard = (props) => {
   const { data } = props;
@@ -22,6 +22,9 @@ const MovieCard = (props) => {
       </Link>
     </div>
   );
+};
+MovieCard.propTypes = {
+  data: PropTypes.string.isRequired,
 };
 
 export default MovieCard;

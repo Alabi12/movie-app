@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaAngleLeft } from 'react-icons/fa';
 import {
   fetchAsyncMovies,
   fetchAsyncShows,
-} from '../../features/movies/movieSlice';
-// import user from '../../images/user.png';
-import './Header.scss';
+} from '../../redux/movies/movieSlice';
+import './Header.scss'
 
 const Header = () => {
   const [term, setTerm] = useState('');
@@ -41,7 +39,4 @@ const Header = () => {
   );
 };
 
-// Header.PropTypes = {
-//   data: PropTypes.string,
-// };
 export default Header;

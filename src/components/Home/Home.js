@@ -5,7 +5,7 @@ import MovieListing from '../MovieListing/MovieListing';
 import {
   fetchAsyncMovies,
   fetchAsyncShows,
-} from '../../features/movies/movieSlice';
+} from '../../redux/movies/movieSlice';
 
 const Home = () => {
   const dispatch = useDispatch();

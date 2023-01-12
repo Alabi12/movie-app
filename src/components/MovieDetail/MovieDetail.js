@@ -6,20 +6,19 @@ import {
   fetchAsyncMovieOrShowDetail,
   getSelectedMovieOrShow,
   removeSelectedMovieOrShow,
-} from "../../features/movies/movieSlice";
+} from "../../redux/movies/movieSlice";
 
 const MovieDetail = () => {
   const { imdbID } = useParams();
   const dispatch = useDispatch();
   const data = useSelector(getSelectedMovieOrShow);
-  console.log("Movie Detailed Data", data);
+  console.log(data);
   useEffect(() => {
     dispatch(fetchAsyncMovieOrShowDetail(imdbID));
     return () => {
       dispatch(removeSelectedMovieOrShow());
     };
   }, [dispatch, imdbID]);
-  console.log(data);
   return (
     <div className="movie-section">
       {Object.keys(data).length === 0 ? (
@@ -31,6 +30,7 @@ const MovieDetail = () => {
             <div className="movie-rating">
               <span>
                 IMDB Rating
+                {' '}
                 <i className="fa fa-star" />
                 {' '}
                 :
@@ -39,6 +39,7 @@ const MovieDetail = () => {
               </span>
               <span>
                 IMDB Votes
+                {' '}
                 <i className="fa fa-thumbs-up" />
                 {' '}
                 :
@@ -47,6 +48,7 @@ const MovieDetail = () => {
               </span>
               <span>
                 Runtime
+                {' '}
                 <i className="fa fa-film" />
                 {' '}
                 :
@@ -55,6 +57,7 @@ const MovieDetail = () => {
               </span>
               <span>
                 Year
+                {' '}
                 <i className="fa fa-calendar" />
                 {' '}
                 :
