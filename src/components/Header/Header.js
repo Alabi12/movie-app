@@ -6,7 +6,7 @@ import {
   fetchAsyncMovies,
   fetchAsyncShows,
 } from '../../redux/movies/movieSlice';
-import './Header.scss'
+import './Header.scss';
 
 const Header = () => {
   const [term, setTerm] = useState('');
