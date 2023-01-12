@@ -88,7 +88,7 @@ To get a local copy up and running, follow these steps:
 - Get a copy of the project
 - Come into the project directory
 - Open the project using code editor of your choice
-- Open your prefered browser
+- Open your prefer browser
 
 ### Prerequisites <a name="prerequisites"></a>
 
