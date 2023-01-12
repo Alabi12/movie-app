@@ -39,31 +39,20 @@ const initialState = {
 const movieSlice = createSlice({
   name: 'movies',
   initialState,
-  reducers:
-  {
+  reducers: {
     removeSelectedMovieOrShow: (state) => {
       state.selectMovieOrShow = {};
     },
   },
   extraReducers: {
-    [fetchAsyncMovies.pending]: () => {
-      console.log('Pending');
-    },
-    [fetchAsyncMovies.fulfilled]: (state, { payload }) => {
-      console.log('Fetched Successfully!');
-      return { ...state, movies: payload };
-    },
+    [fetchAsyncMovies.pending]: () => {},
+    [fetchAsyncMovies.fulfilled]: (state, { payload }) => ({ ...state, movies: payload }),
     [fetchAsyncMovies.rejected]: () => {
-      console.log('Rejected!');
+
     },
-    [fetchAsyncShows.fulfilled]: (state, { payload }) => {
-      console.log('Fetched Successfully!');
-      return { ...state, shows: payload };
-    },
-    [fetchAsyncMovieOrShowDetail.fulfilled]: (state, { payload }) => {
-      console.log('Fetched Successfully!');
-      return { ...state, selectMovieOrShow: payload };
-    },
+    [fetchAsyncShows.fulfilled]: (state, { payload }) => ({ ...state, shows: payload }),
+    [fetchAsyncMovieOrShowDetail.fulfilled]:
+    (state, { payload }) => ({ ...state, selectMovieOrShow: payload }),
   },
 });
 
