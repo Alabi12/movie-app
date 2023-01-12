@@ -1,17 +1,18 @@
-import React, { useEffect } from 'react';
-import './MovieDetail.scss';
-import { useParams } from 'react-router';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useEffect } from "react";
+import "./MovieDetail.scss";
+import { useParams } from "react-router";
+import { useDispatch, useSelector } from "react-redux";
 import {
   fetchAsyncMovieOrShowDetail,
   getSelectedMovieOrShow,
   removeSelectedMovieOrShow,
-} from '../../features/movies/movieSlice';
+} from "../../features/movies/movieSlice";
 
 const MovieDetail = () => {
   const { imdbID } = useParams();
   const dispatch = useDispatch();
   const data = useSelector(getSelectedMovieOrShow);
+  console.log("Movie Detailed Data", data);
   useEffect(() => {
     dispatch(fetchAsyncMovieOrShowDetail(imdbID));
     return () => {
@@ -30,7 +31,6 @@ const MovieDetail = () => {
             <div className="movie-rating">
               <span>
                 IMDB Rating
-                {' '}
                 <i className="fa fa-star" />
                 {' '}
                 :
@@ -39,7 +39,6 @@ const MovieDetail = () => {
               </span>
               <span>
                 IMDB Votes
-                {' '}
                 <i className="fa fa-thumbs-up" />
                 {' '}
                 :
@@ -48,7 +47,6 @@ const MovieDetail = () => {
               </span>
               <span>
                 Runtime
-                {' '}
                 <i className="fa fa-film" />
                 {' '}
                 :
@@ -57,7 +55,6 @@ const MovieDetail = () => {
               </span>
               <span>
                 Year
-                {' '}
                 <i className="fa fa-calendar" />
                 {' '}
                 :
