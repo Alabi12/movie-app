@@ -78,7 +78,7 @@
 <!-- LIVE DEMO -->
 
  ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo on Pages](https://alabi12.github.io/redux-movie-app/)
+- [Live Demo on Pages](https://alabi12.github.io/redux-movie-app/dist)
 
 <!-- GETTING STARTED -->
 
