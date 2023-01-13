@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import MovieListing from '../MovieListing/MovieListing';
-
 import {
   fetchAsyncMovies,
   fetchAsyncShows,
 } from '../../redux/movies/movieSlice';
+import Header from '../Header/Header';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -17,6 +17,7 @@ const Home = () => {
   }, [dispatch]);
   return (
     <div>
+      <Header />
       <div className="banner-img" />
       <MovieListing />
     </div>

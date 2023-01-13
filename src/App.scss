@@ -13,8 +13,12 @@ a {
 
 body {
   background: $primary-color;
+
 }
 
 .container {
   margin: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

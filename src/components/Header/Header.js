@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { FaAngleLeft } from 'react-icons/fa';
 import {
   fetchAsyncMovies,
   fetchAsyncShows,
@@ -19,9 +17,6 @@ const Header = () => {
   };
   return (
     <div className="header">
-      <div className="logo">
-        <Link to="/"><FaAngleLeft className="fa-icon" /></Link>
-      </div>
       <div className="search-bar">
         <form onSubmit={submitHandler}>
           <input

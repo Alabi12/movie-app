@@ -229,6 +229,8 @@ Give a ⭐️ if you like this project!
 I would like to thank:
 - [Microverse](www.microverse.com)
 
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
+
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>

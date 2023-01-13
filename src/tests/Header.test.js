@@ -1,0 +1,21 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { Provider } from 'react-redux';
+import { MemoryRouter as Router } from 'react-router-dom';
+import store from '../redux/store';
+import Header from '../components/Header/Header';
+
+describe('Testing App component', () => {
+  test('Snapshot testing', () => {
+    const myRenderer = renderer.create(
+      <Provider store={store}>
+        <Router>
+          <Header />
+        </Router>
+        ,
+      </Provider>,
+    );
+    const testComponent = myRenderer.toJSON();
+    expect(testComponent).toMatchSnapshot();
+  });
+});
