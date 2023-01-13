@@ -12,7 +12,6 @@ describe('Testing App component', () => {
         <Router>
           <App />
         </Router>
-        ,
       </Provider>,
     );
     const testComponent = myRenderer.toJSON();

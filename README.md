@@ -29,7 +29,7 @@
 
 # 📖 Movie App <a name="about-project"></a>
 
-**Movie App**  is about building a mobile web application to check a list of metrics (numeric values) that you will create making use of React and Redux. The application will allow users to search for appropriate choice movie. Application is working with the real live data from API.
+**Movie App**  is about building a mobile web application to check a list of metrics (numeric values) that you will create making use of React and Redux. The application will allow users to search for appropriate choice movie to view. Application is working with the real live data from API.
 
 # 👁‍🗨 Preview
 
@@ -81,7 +81,7 @@
 - [Live Demo on Pages](https://alabi12.github.io/movie-app/)
 
  ## 🚀 Presentation <a name="live-demo"></a>
-- [Live Demo on Pages](https://www.loom.com/share/e291b9e8d23741d4b21fda93d15f8ce6)
+- [Live Demo on Pages](https://www.loom.com/share/f9c4db1e339047308aab6ce7b9348290)
 
 <!-- GETTING STARTED -->
 
