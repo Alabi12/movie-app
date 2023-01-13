@@ -3,7 +3,7 @@
 .header {
   background-color: $secondary-color;
   height: 72px;
-  padding: 0px 40px;
+  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,8 +12,14 @@
 .logo {
   font-size: 30px;
   font-weight: 600;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+
   .fa-icon {
-    color: black;
+    color: rgb(31, 31, 31);
   }
 }
 
@@ -27,17 +33,19 @@
   width: 50%;
   margin: auto;
 
-  form{
+  form {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     width: 70%;
+
     button {
-      padding:0 8px;
+      padding: 0 8px;
       font-size: 20px;
       cursor: pointer;
       height: 38px;
     }
   }
+
   input {
     font-size: 18px;
     width: 100%;
