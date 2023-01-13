@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import './MovieDetail.scss';
 import { useParams } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { FaAngleLeft } from 'react-icons/fa';
 import {
   fetchAsyncMovieOrShowDetail,
   getSelectedMovieOrShow,
@@ -25,6 +27,14 @@ const MovieDetail = () => {
       ) : (
         <>
           <div className="section-left">
+            <div className="logo">
+              <Link to="/">
+                <FaAngleLeft className="fa-icon" />
+              </Link>
+            </div>
+            <div className="section-right">
+              <img src={data.Poster} alt={data.Title} />
+            </div>
             <div className="movie-title">{data.Title}</div>
             <div className="movie-rating">
               <span>
@@ -44,15 +54,6 @@ const MovieDetail = () => {
                 :
                 {' '}
                 {data.imdbVotes}
-              </span>
-              <span>
-                Runtime
-                {' '}
-                <i className="fa fa-film" />
-                {' '}
-                :
-                {' '}
-                {data.Runtime}
               </span>
               <span>
                 Year
@@ -75,10 +76,6 @@ const MovieDetail = () => {
                 <span>{data.Actors}</span>
               </div>
               <div>
-                <span>Generes</span>
-                <span>{data.Genre}</span>
-              </div>
-              <div>
                 <span>Languages</span>
                 <span>{data.Language}</span>
               </div>
@@ -87,9 +84,6 @@ const MovieDetail = () => {
                 <span>{data.Awards}</span>
               </div>
             </div>
-          </div>
-          <div className="section-right">
-            <img src={data.Poster} alt={data.Title} />
           </div>
         </>
       )}
