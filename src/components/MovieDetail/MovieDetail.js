@@ -65,24 +65,23 @@ const MovieDetail = () => {
                 {data.Year}
               </span>
             </div>
-            <div className="movie-plot">{data.Plot}</div>
             <div className="movie-info">
-              <div>
-                <span>Director</span>
-                <span>{data.Director}</span>
-              </div>
-              <div>
-                <span>Stars</span>
-                <span>{data.Actors}</span>
-              </div>
-              <div>
-                <span>Languages</span>
-                <span>{data.Language}</span>
-              </div>
-              <div>
-                <span>Awards</span>
-                <span>{data.Awards}</span>
-              </div>
+              <ul>
+                <li>Director</li>
+                <li>{data.Director}</li>
+              </ul>
+              <ul>
+                <li>Stars</li>
+                <li>{data.Actors}</li>
+              </ul>
+              <ul>
+                <li>Languages</li>
+                <li>{data.Language}</li>
+              </ul>
+              <ul>
+                <li>Awards</li>
+                <li>{data.Awards}</li>
+              </ul>
             </div>
           </div>
         </>
