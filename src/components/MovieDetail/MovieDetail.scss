@@ -1,12 +1,12 @@
 @import "../../common/colors.scss";
 
-// .movie-section {
-//   display: flex;
-//   justify-content: space-evenly;
-//   padding: 40px 0;
-//   color: $font-primary;
-//   font-weight: 400;
-// }
+.movie-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 0;
+  color: $font-primary;
+  font-weight: 400;
+}
 
 .logo {
   font-size: 30px;
@@ -22,10 +22,11 @@
 }
 
 .movie-rating {
-  padding-left: 3px;
+  padding: 30px;
   margin-top: 20px;
-  color: $font-secondary;
   display: flex;
+  color: #fff;
+  background-color: rgb(219, 35, 122);
 
   span {
     margin-right: 20px;
@@ -33,7 +34,6 @@
 }
 
 .movie-title {
-  font-size: 24px;
   color: $font-primary;
   font-weight: 600;
 }
@@ -41,6 +41,15 @@
 .movie-plot {
   margin-top: 20px;
   line-height: 1.8rem;
+}
+
+.movie-info {
+  color: #fff;
+}
+
+.movie-info li {
+  padding: 20px;
+  list-style: none;
 }
 
 .movie-info > div span {
@@ -53,6 +62,14 @@
   font-weight: 600;
   width: 100px;
   display: inline-block;
+}
+
+.movie-info li:nth-child(even) {
+  background-color: rgb(219, 35, 122);
+}
+
+.arrow {
+  display: flex;
 }
 
 .fa-star {
@@ -72,5 +89,5 @@
 }
 
 .section-right {
-  margin-left: 30px;
+  margin-left: 50px;
 }
